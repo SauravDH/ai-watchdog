@@ -63,9 +63,4 @@ window.addEventListener('popstate', function(event) {
     } else {
         loadContent('./partials/home.html');
     }
-});
-
-// Load initial content based on current URL
-const path = window.location.pathname.replace(basePath, '');
-const pageName = path.substring(1) || 'home';
-loadContent(`./partials/${pageName}.html`); 
+}); 
